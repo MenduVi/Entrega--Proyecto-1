@@ -8,7 +8,7 @@
   --spacing: 80px;
   --small_spacing: 20px;
   --hight_spacing: 130px;
-  --borderRadius:15px;
+  --borderRadius: 15px;
 }
 * {
   padding: 0;
@@ -17,10 +17,9 @@
   font-family: "Inter", sans-serif;
 }
 
-h5{
-  font-size:17px;
+h5 {
+  font-size: 17px;
 }
-
 
 header nav {
   height: 200px;
@@ -30,21 +29,20 @@ header nav {
   padding: var(--spacing);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
- li a{
+li a {
   text-decoration: none;
   color: var(--color-black);
 }
 
- li a:hover{
+li a:hover {
   color: var(--color-blue);
   font-weight: 600;
   transition: 0.3seg;
-
- }
+}
 
 nav h2,
 nav ul {
@@ -65,9 +63,6 @@ nav .fa-solid {
   font-size: 30px;
   display: none;
 }
-
-
-
 
 .hero {
   display: flex;
@@ -93,8 +88,7 @@ nav .fa-solid {
   font-size: 20px;
 }
 
-
-.botton{
+.botton {
   text-decoration: none;
   text-transform: uppercase;
   background-color: var(--color-blue);
@@ -103,15 +97,13 @@ nav .fa-solid {
   border-radius: var(--borderRadius);
   font-weight: 600;
   justify-content: center;
-
 }
-.hero img{
+.hero img {
   max-width: 450px;
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
 }
-
 
 h4 {
   text-align: center;
@@ -125,8 +117,8 @@ h4 {
   flex-wrap: wrap;
   flex-grow: 1;
   align-items: center;
-  justify-content:center;
-  gap:var(--spacing);
+  justify-content: center;
+  gap: var(--spacing);
 }
 
 .design {
@@ -164,7 +156,6 @@ h4 {
   flex-grow: 1;
   padding: var(--small_spacing);
   align-items: center;
-
 }
 
 #testimonial div {
@@ -175,11 +166,10 @@ h4 {
   justify-items: center;
   align-items: center;
   align-content: center;
-  
 }
 
 #testimonial h4 {
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-size: 12px;
   font-weight: 350;
 }
@@ -197,11 +187,10 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   gap: var(--spacing);
   margin: 0 auto;
-
 }
 
 #testimonial li {
@@ -210,16 +199,14 @@ h4 {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  border-radius:var(--borderRadius);
+  border-radius: var(--borderRadius);
   padding: var(--small_spacing);
   background-color: var(--color-grey);
   margin: 0 auto;
   margin-bottom: var(--spacing);
- 
-
 }
 
-#testimonial #white_backgraund{
+#testimonial #white_backgraund {
   background-color: var(--color-white);
 }
 
@@ -232,27 +219,26 @@ h4 {
   font-size: 12px;
   font-weight: 200;
 }
- #testimonial ul li h4{
+#testimonial ul li h4 {
   text-transform: capitalize;
- }
+}
 
- #contact{
+#contact {
   display: flex;
   max-width: 70vw;
-  gap:var(--spacing);
+  gap: var(--spacing);
   flex-wrap: wrap;
   flex-grow: 1;
   padding: var(--small_spacing);
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   background-color: var(--color-grey);
   border-radius: var(--borderRadius);
   padding-bottom: var(--spacing);
   margin: 0 auto;
-  
- }
- 
- #contact h3 {
+}
+
+#contact h3 {
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -275,103 +261,96 @@ h4 {
   max-width: 400px;
 }
 
-footer{
+footer {
   display: flex;
   flex-wrap: wrap;
-  gap:var(--hight_spacing);
+  gap: var(--hight_spacing);
   margin-top: var(--hight_spacing);
   background-color: var(--color-grey);
   text-transform: capitalize;
   width: 100%;
   padding: var(--hight_spacing);
-  
-
 }
 
-.resources{
+.resources {
   width: 200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: center;
   gap: var(--small_spacing);
   justify-items: center;
 }
 
-.company{
+.company {
   width: 200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: var(--small_spacing);
   justify-items: center;
-
 }
 
-.socialMedia{
+.socialMedia {
   width: 200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: var(--small_spacing);
   justify-items: center;
 }
 
-  footer li{
-    font-size: 15px;
-    font-weight: 200;
+footer li {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+footer > h5 {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1120px) {
+  nav ul {
+    display: none;
   }
 
-  footer> h5{
-    width: 100%; 
-    text-align: center;
+  nav .fa-solid {
+    display: block;
   }
 
+  footer {
+    width: 100%;
+    gap: var(--spacing);
+  }
 
-  @media (max-width: 1120px) {
-    nav ul{
-      display: none;
-    }
-  
-    nav .fa-solid {
-      display: block;
-    }
-
-    footer{
-      width: 100%;
-      gap: var(--spacing);
-    }
-
-    .resources{
-      display: flex;
-      width: 100%;
-      align-items: center;
-     }
-  
-
-   .company{
+  .resources {
     display: flex;
     width: 100%;
     align-items: center;
-   }
+  }
 
-   .socialMedia{
+  .company {
     display: flex;
     width: 100%;
     align-items: center;
-   }
-
   }
 
-  @media (max-width: 890px){
-    .companiesBar {
-      gap:var(--small_spacing)
-    }
-
+  .socialMedia {
+    display: flex;
+    width: 100%;
+    align-items: center;
   }
+}
+
+@media (max-width: 890px) {
+  .companiesBar {
+    gap: var(--small_spacing);
+  }
+}
