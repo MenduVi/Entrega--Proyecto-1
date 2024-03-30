@@ -8,13 +8,17 @@
   --spacing: 80px;
   --small_spacing: 20px;
   --hight_spacing: 130px;
+  --borderRadius:15px;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background-color: var(--color-blanco);
+}
+
+h5{
+  font-size:17px;
 }
 
 
@@ -24,6 +28,10 @@ header nav {
   align-items: center;
   justify-content: space-between;
   padding: var(--spacing);
+}
+
+ul{
+  list-style: none;
 }
 
  li a{
@@ -43,6 +51,8 @@ nav ul {
   display: flex;
   align-items: center;
   padding: var(--spacing);
+  gap: var(--spacing);
+  font-weight: 300;
 }
 
 nav h2 {
@@ -51,11 +61,10 @@ nav h2 {
   font-weight: 600;
 }
 
-nav ul {
-  list-style: none;
-  gap: var(--spacing);
-  font-weight: 300;
+nav .fa-solid {
+  display: none;
 }
+
 
 .hero {
   display: flex;
@@ -87,7 +96,7 @@ nav ul {
   background-color: var(--color-blue);
   color: var(--color-white);
   padding: var(--small_spacing);
-  border-radius: 15px;
+  border-radius: var(--borderRadius);
   font-weight: 600;
   justify-content: center;
 
@@ -190,10 +199,17 @@ h4 {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  border-radius: 15px;
+  border-radius:var(--borderRadius);
   padding: var(--small_spacing);
   background-color: var(--color-grey);
+  margin: 0 auto;
   margin-bottom: var(--spacing);
+ 
+
+}
+
+#testimonial #white_backgraund{
+  background-color: var(--color-white);
 }
 
 #testimonial img {
@@ -219,7 +235,7 @@ h4 {
   align-items: center;
   justify-content:center;
   background-color: var(--color-grey);
-  border-radius: 15px;
+  border-radius: var(--borderRadius);
   padding-bottom: var(--spacing);
   margin: 0 auto;
   
@@ -247,3 +263,63 @@ h4 {
   display: flex;
   max-width: 400px;
 }
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  gap:var(--hight_spacing);
+  margin-top: var(--hight_spacing);
+  background-color: var(--color-grey);
+  text-transform: capitalize;
+  width: 100%;
+  padding: var(--hight_spacing);
+  
+
+}
+
+.resources{
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  justify-content: center;
+  gap: var(--small_spacing);
+  justify-items: center;
+}
+
+.company{
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  gap: var(--small_spacing);
+  justify-items: center;
+
+}
+
+.socialMedia{
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  gap: var(--small_spacing);
+  justify-items: center;
+}
+
+  footer li{
+    font-size: 15px;
+    font-weight: 200;
+  }
+
+  footer> h5{
+    width: 100%; 
+    text-align: center;
+  }
+
+
